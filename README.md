@@ -41,7 +41,7 @@ You can install with [bower](http://bower.io/).
 
 
 ```sh
-$ bower install jquery.incremental-counter
+$ bower install jquery-incremental-counter
 
 ```
 
