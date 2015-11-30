@@ -2,12 +2,19 @@
 jQuery plugin incremental counter is a simple counter animated  
 
 
+## Demo
+
+Simple exemple on [jsfiddle](https://jsfiddle.net/w9gmadoL/)
+
+
+
 ## How to Use?
 
 Incremental counter depends on jQuery. Include them both in end of your HTML code:
 
 ```html
 <link rel="stylesheet" type="text/css" href="jquery.incremental-counter.css" />
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700"> <!-- optional font -->
 <script src="jquery.js" type="text/javascript"></script>
 <script src="jquery.incremental-counter.js" type="text/javascript"></script>
 ```
