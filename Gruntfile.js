@@ -10,7 +10,7 @@ module.exports = function(grunt) {
             target: {
                 files: {
                     "jquery.incremental-counter.min.js" : "jquery.incremental-counter.js",
-                    "jquery.incremental-counter.min.css" : "jquery.incremental-counter.css"
+                    //"jquery.incremental-counter.min.css" : "jquery.incremental-counter.css"
                 }
             }
         },

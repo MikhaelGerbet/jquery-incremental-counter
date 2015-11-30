@@ -2,7 +2,6 @@
  Plugin Name: jQuery plugin incremental counter
  Plugin URI: https://github.com/MikhaelGerbet/jquery-incremental-counter
  Description: jQuery plugin incremental counter is a simple counter animated
- Version: 0.1
  Author: GERBET Mikhael
  Author URI: https://github.com/MikhaelGerbet
  License: MIT
