@@ -1,5 +1,5 @@
 {
-  "name": "query-incremental-counter",
+  "name": "jquery-incremental-counter",
   "version": "1.0.1",
   "engines": {
     "node": ">= 0.8.0"
@@ -24,9 +24,10 @@
     "url": "https://github.com/MikhaelGerbet/jquery-incremental-counter/issues"
   },
   "homepage": "https://github.com/MikhaelGerbet/jquery-incremental-counter",
-  "main": "jquery.incremental-counter.js",
+  "main": "jquery.incremental-counter.min.js",
   "files": [
     "jquery.incremental-counter.js",
+    "jquery.incremental-counter.min.js",
     "jquery.incremental-counter.css"
   ],
   "keywords": [

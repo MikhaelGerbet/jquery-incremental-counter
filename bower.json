@@ -1,0 +1,22 @@
+{
+  "name": "jquery-incremental-counter",
+  "description": "jQuery plugin incremental counter is a simple counter animated",
+  "main": "jquery.incremental-counter.min.js",
+  "authors": [
+    "Mikhael GERBET <contact@gerbet-mikhael.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "homepage": "https://github.com/MikhaelGerbet/jquery-incremental-counter",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

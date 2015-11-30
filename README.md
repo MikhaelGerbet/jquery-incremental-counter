@@ -37,12 +37,12 @@ This causes all elements of class incremental-counter to be initialized.
 
 ## Install
 
-You can install with [bower](http://bower.io/) or [npm](https://www.npmjs.com/).
+You can install with [bower](http://bower.io/).
 
 
 ```sh
 $ bower install jquery.incremental-counter
-$ npm install jquery-incremental-counter
+
 ```
 
 
