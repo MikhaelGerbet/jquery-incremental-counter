@@ -2,6 +2,9 @@
 jQuery plugin incremental counter is a simple counter animated  
 
 
+![alt text](https://raw.githubusercontent.com/MikhaelGerbet/jquery-incremental-counter/master/doc/images/counter.jpg "jQuery plugin incremental counter")
+
+
 ## Demo
 
 Simple exemple on [jsfiddle](https://jsfiddle.net/w9gmadoL/2/)
