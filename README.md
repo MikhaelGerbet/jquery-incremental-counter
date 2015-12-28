@@ -7,7 +7,7 @@ jQuery plugin incremental counter is a simple counter animated
 
 ## Demo
 
-Exemple on [jsfiddle](https://jsfiddle.net/w9gmadoL/2/)
+Exemple on [jsfiddle](https://jsfiddle.net/frollon/c9zc6zbw/)
 
 
 
