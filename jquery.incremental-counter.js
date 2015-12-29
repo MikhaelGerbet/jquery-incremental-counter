@@ -11,7 +11,7 @@
     $.fn.incrementalCounter = function(options){
         //default options
         var defauts = {
-                "numbers": 4
+                "digits": 4
             },
             pad = function(n, width, z) {
                 z = z || '0';
@@ -25,16 +25,17 @@
                     current_speed = 20;
 
                 if (end_value - current_value < 5){
-                    current_speed = 250;
+                    current_speed = 200;
                     current_value += 1;
-                } else if(end_value - current_value < 20){
+                } else if(end_value - current_value < 15){
                     current_speed = 50;
                     current_value += 1
                 } else if(end_value - current_value < 50){
                     current_speed = 25;
-                    current_value += 1
+                    current_value += 3
                 } else{
-                    current_value += 19;
+                    current_speed = 25;
+                    current_value += parseInt((end_value - current_value)/24)
                 }
 
                 $(element).data({
@@ -50,12 +51,10 @@
                 }
             },
             display = function(element,value){
-                var padedNumber = pad(value, options.numbers),
+                var padedNumber = pad(value, element.data('digits')),
                     exp = padedNumber.split(""),
                     end_value = $(element).data('end_value'),
                     nums = $(element).find('.num');
-
-
                 $(exp).each(function(i,e){
                     $(nums[i]).text(exp[i]);
                 });
@@ -64,20 +63,27 @@
                     start(element);
                 }
             },
-            //merge options
+        //merge options
             options = $.extend(defauts, options);
 
         this.each(function(index,element){
 
+            var default_digits = options.digits ,
+                digits =  element.getAttribute('data-digits') ?  element.getAttribute('data-digits') : default_digits ,
+                end_value = parseInt( element.getAttribute('data-value'));
+
+            digits = digits === 'auto' || digits < String(end_value).length ? String(end_value).length : digits;
+
             //get value
             $(element).data({
                 current_value : 0,
-                end_value : parseInt( element.getAttribute('data-value')),
+                end_value : end_value,
+                digits : digits,
                 current_speed : 0
             });
 
             //add number container
-            for(var i=0 ; i < options.numbers ; i++){
+            for(var i=0 ; i < digits ; i++){
                 $(element).append('<div class="num">0</div>');
             }
 
