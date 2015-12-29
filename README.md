@@ -7,7 +7,9 @@ jQuery plugin incremental counter is a simple counter animated
 
 ## Demo
 
-Exemple on [jsfiddle](https://jsfiddle.net/mikhaelgerbet/c9zc6zbw/)
+Simple exemple on [jsfiddle](https://jsfiddle.net/mikhaelgerbet/c9zc6zbw/)
+Advanced exemple (multiple instances) on [jsfiddle](https://jsfiddle.net/mikhaelgerbet/roasb710/)
+Advanced exemple (likebox style) on [jsfiddle](https://jsfiddle.net/mikhaelgerbet/4pnkqu02/)
 
 
 
@@ -35,6 +37,22 @@ $(".incremental-counter").incrementalCounter();
 ```
 
 This causes all elements of class incremental-counter to be initialized.
+
+
+
+## Options?
+
+digits : number of displayed digits
+
+'auto' or {int number} ('auto' by default)
+
+```js
+$(".incremental-counter").incrementalCounter({digits:'auto'});
+```
+
+```html
+<div class="incremental-counter" data-digist="7" data-value="1482"></div>
+```
 
 
 
