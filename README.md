@@ -42,11 +42,11 @@ This causes all elements of class incremental-counter to be initialized.
 
 
 
-## Options?
+## Options
 
 digits : number of displayed digits
 
-'auto' or {int number} ('auto' by default)
+> 'auto' or {int number} ('auto' by default)
 
 ```js
 $(".incremental-counter").incrementalCounter({digits:'auto'});
