@@ -21,8 +21,13 @@
             start = function(element){
 
                 var current_value = parseInt($(element).data('current_value')),
-                    end_value = $(element).data('end_value'),
+                    end_value = parseInt($(element).data('end_value')),
                     current_speed = 20;
+
+                if(end_value === 0) {
+                    return false;
+                }
+
 
                 if (end_value - current_value < 5){
                     current_speed = 200;
@@ -63,10 +68,10 @@
                     start(element);
                 }
             },
-        //merge options
+            //merge options
             options = $.extend(defauts, options);
 
-        this.each(function(index,element){
+        this.each(function(index, element){
 
             var default_digits = options.digits ,
                 digits =  element.getAttribute('data-digits') ?  element.getAttribute('data-digits') : default_digits ,
