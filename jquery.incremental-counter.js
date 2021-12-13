@@ -56,10 +56,12 @@
                 }
             },
             display = function(element,value){
-                var padedNumber = pad(value, element.data('digits')),
+                var commaValue = value.toLocaleString('ko-KR'),
+                    padedNumber = pad(element.data('comma') ? commaValue : value, element.data('digits')),
                     exp = padedNumber.split(""),
                     end_value = $(element).data('end_value'),
                     nums = $(element).find('.num');
+                console.log(element.data('comma'));
                 $(exp).each(function(i,e){
                     $(nums[i]).text(exp[i]);
                 });
@@ -74,16 +76,19 @@
         this.each(function(index, element){
 
             var default_digits = options.digits ,
+                default_comma = options.comma ,
                 digits =  element.getAttribute('data-digits') ?  element.getAttribute('data-digits') : default_digits ,
+                comma =  element.getAttribute('data-comma') ?  element.getAttribute('data-comma') : default_comma ,
                 end_value = parseInt( element.getAttribute('data-value'));
 
-            digits = digits === 'auto' || digits < String(end_value).length ? String(end_value).length : digits;
+                digits = digits === 'auto' || digits < String(end_value).length ? comma ? end_value.toLocaleString('ko-KR').length : String(end_value).length : digits;
 
             //get value
             $(element).data({
                 current_value : 0,
                 end_value : end_value,
                 digits : digits,
+                comma: comma,
                 current_speed : 0
             });
 
