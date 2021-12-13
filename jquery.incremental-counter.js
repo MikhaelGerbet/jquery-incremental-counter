@@ -61,7 +61,6 @@
                     exp = padedNumber.split(""),
                     end_value = $(element).data('end_value'),
                     nums = $(element).find('.num');
-                console.log(element.data('comma'));
                 $(exp).each(function(i,e){
                     $(nums[i]).text(exp[i]);
                 });
